@@ -8,7 +8,7 @@ import { ImageSource } from "@nativescript/core";
   templateUrl: "./share.component.html"
 })
 export class ShareComponent {
-  public captureImage: ImageSource | null = null;
+  public capturedImage: ImageSource | null = null;
 
   // Punto 3: Compartir texto mediante social-share
   shareTextMessage() {
@@ -32,7 +32,7 @@ export class ShareComponent {
   }
   // Puntos 4 y 6: Compartir la imagen capturada con la cámara mediante social-share
   shareCapturedImage() {
-    if (this.capturedImage() { 
+    if (this.capturedImage) { 
       SocialShare.shareImage(this.capturedImage);
     } else {
       console.log("No hay ninguna imagen tomada para compartir.");

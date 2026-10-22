@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
         this.showToastNotification(notificationTitle);
       }
     }).then(
-      () => console.log("Firebase inicializado con éxito),
+      () => console.log("Firebase inicializado con éxito"),
       (error) => console.error("Error al inicializar Firebase: " + error)
     );
   }

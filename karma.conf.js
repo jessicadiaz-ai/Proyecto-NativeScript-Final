@@ -3,7 +3,7 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'app/**/*.spec.ts'
+      'tests/**/*.spec.ts'
     ],
     plugins: [
       require('karma-jasmine'),
